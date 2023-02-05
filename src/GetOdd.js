@@ -25,9 +25,7 @@ const GetOdd = () => {
         placeholder="Enter a comma separated number"
         onChange={(e) => setNumber(e.target.value)}
       />
-      <button
-        onClick={getOddCount}
-      >
+      <button onClick={getOddCount}>
         GetOdd
       </button>
       <p>{result}</p>
