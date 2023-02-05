@@ -1,8 +1,8 @@
-
-body{
+body {
   background-color: rgb(213, 213, 213);
 
 }
+
 .center {
   text-align: center;
 }
@@ -11,9 +11,11 @@ body{
   margin: 2rem;
   background-color: rgb(212, 212, 212);
 }
-.nav{
+
+.nav {
   text-decoration: none;
 }
+
 .navbar-container {
   display: flex;
   justify-content: space-between;
@@ -40,9 +42,36 @@ body{
   padding: 1rem;
 }
 
+input {
+  margin: .8rem;
+  padding: .4rem;
+  border-radius: .2rem;
+  border: 2px solid aqua;
+}
+
 .encript-item {
+  width: 30%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-color: gray;
+  margin: 0 auto;
+  margin-top: 2rem;
+  padding: 2.5rem 0;
+  border-radius: .5rem;
+  box-shadow: 1px 1px 2px 0px violet;
+}
+
+button {
+  margin: .5rem;
+  font-weight: 600;
+  padding: .2rem 4rem;
+  border-radius: .3rem;
+  border: none;
+}
+
+button:hover {
+  background-color: green;
+  color: white;
 }

@@ -1,17 +1,17 @@
 import { useState } from "react";
 const GetOdd = () => {
   let arr = [];
-const [number,setNumber] = useState(arr);
-let [result,setResult] = useState("");
+  const [number, setNumber] = useState(arr);
+  let [result, setResult] = useState("");
 
-function getOddCount(result) {
-  const counts = {};
-  arr.forEach(function (x) { counts[x] = (counts[x] || 0) + 1; })
-  const num =  +Object.entries(counts).find(([key, value]) => value % 2 !== 0)[0];
-  setResult(num);
-}
-console.log(number)
-console.log(arr)
+  function getOddCount() {
+    const counts = {};
+    number.split(",").forEach((x) => { counts[x] = (counts[x] || 0) + 1; })
+    const num = +Object.entries(counts).find(([key, value]) => value % 2 !== 0)[0];
+    setResult(num);
+  }
+  console.log(number)
+  console.log(arr)
 
 
   return (
@@ -26,11 +26,11 @@ console.log(arr)
         onChange={(e) => setNumber(e.target.value)}
       />
       <button
-        onClick={() => getOddCount(arr)}
+        onClick={getOddCount}
       >
         GetOdd
       </button>
-      <p>{result = arr.push(number)}</p>
+      <p>{result}</p>
     </div>
   );
 }
