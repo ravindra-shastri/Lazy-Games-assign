@@ -23,12 +23,12 @@ const Decrypt = () => {
     <div className="center">
       <div className="encript-item">
         <label>
-          secret Key
+          Secret Key
         </label>
         <input
           type="text"
           onChange={(e) => setSalt(e.target.value)}
-          placeholder="Enter Secret Key"
+          placeholder="Enter a secret key"
         />
         <label>
           Hash code to decrypt
@@ -41,13 +41,16 @@ const Decrypt = () => {
         <button onClick={() => decrypt(salt, encoded)}>
           Generate
         </button>
-        <label>
-          Encrypted Text
-        </label>
-        <textarea
-          value={encrypted}
-          onChange={() => { }}
-        />
+
+        {
+          encrypted ?
+            (<div className="output-item">
+              <label>
+                Decrypted text
+              </label>
+              <textarea value={encrypted} onChange={() => { }} />
+            </div>) : ""
+        }
       </div>
     </div>
   );

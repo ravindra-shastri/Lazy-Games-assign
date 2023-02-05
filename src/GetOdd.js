@@ -16,7 +16,6 @@ const GetOdd = () => {
 
   return (
     <div className="encript-item">
-      <h3>GetOdd</h3>
       <label>
         Enter a comma separated number
       </label>
@@ -26,9 +25,12 @@ const GetOdd = () => {
         onChange={(e) => setNumber(e.target.value)}
       />
       <button onClick={getOddCount}>
-        GetOdd
+        Get Odd
       </button>
-      <p>{result}</p>
+      {
+        result ?
+          <p className="result">{result}</p> : ""
+      }
     </div>
   );
 }

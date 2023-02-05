@@ -23,19 +23,19 @@ const Encrypt = () => {
   return (
     <div className="encript-item">
       <label>
-        secret Key
+        Secret Key
       </label>
       <input
         type="text"
-        placeholder="Enter Secret Key"
+        placeholder="Enter a secret key"
         onChange={(e) => setSalt(e.target.value)}
       />
       <label>
-        Message to Encrypt
+        Message to encrypt
       </label>
       <input
         type="text"
-        placeholder="Message to Encrypt"
+        placeholder="Message to encrypt"
         onChange={(e) => setText(e.target.value)}
       />
       <button
@@ -43,10 +43,16 @@ const Encrypt = () => {
       >
         Generate
       </button>
-      <label>
-        Encrypted Text
-      </label>
-      <textarea value={crypted} onChange={() => { }} />
+      {
+        crypted ?
+          (<div className="output-item">
+            <label>
+              Encrypted text
+            </label>
+            <textarea value={crypted} onChange={() => { }} />
+          </div>) : ""
+      }
+
     </div>
   );
 }
