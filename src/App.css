@@ -1,38 +1,77 @@
-.App {
+body {
+  background-color: rgb(213, 213, 213);
+
+}
+
+.center {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.home {
+  margin: 2rem;
+  background-color: rgb(212, 212, 212);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav {
+  text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  background-color: rgb(73, 38, 106);
   color: white;
+  font-weight: 500;
+  padding: 0 1rem;
+  border-radius: 0.5rem;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar-item-content {
+  display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar-item {
+  margin: 1rem 2rem;
+  color: white;
+  text-decoration: none;
+}
+
+.encrypt {
+  font-size: 1rem;
+  background-color: rgb(194, 194, 194);
+  padding: 1rem;
+}
+
+input {
+  margin: .8rem;
+  padding: .4rem;
+  border-radius: .2rem;
+  border: 2px solid aqua;
+}
+
+.encript-item {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: gray;
+  margin: 0 auto;
+  margin-top: 2rem;
+  padding: 2.5rem 0;
+  border-radius: .5rem;
+  box-shadow: 1px 1px 2px 0px violet;
+}
+
+button {
+  margin: .5rem;
+  font-weight: 600;
+  padding: .2rem 4rem;
+  border-radius: .3rem;
+  border: none;
+}
+
+button:hover {
+  background-color: green;
+  color: white;
 }
